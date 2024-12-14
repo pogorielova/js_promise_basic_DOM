@@ -1,7 +1,7 @@
 'use strict';
 
 const promise1 = new Promise((resolve, reject) => {
-  const logo = document.querySelector('logo');
+  const logo = document.querySelector('.logo');
 
   logo.addEventListener('click', () => {
     resolve();
@@ -11,7 +11,7 @@ const promise1 = new Promise((resolve, reject) => {
 const promise2 = new Promise((resolve, reject) => {
   setTimeout(() => {
     // eslint-disable-next-line prefer-promise-reject-errors
-    reject();
+    reject('I have no idea what is happenninng here.');
   }, 3000);
 });
 
